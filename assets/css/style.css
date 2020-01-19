@@ -1,0 +1,52 @@
+/* body */
+  body {
+    background: grey;
+  }
+
+/* HEADER THE SAME FOR ALL HTML FILES */
+/* header */
+  header {
+    font-family: Karla;
+    background: white;
+  }
+
+  /* name icon in header */
+    #nameBlock {
+      font-weight: bold;
+      font-size: x-large;
+      text-align: center;
+      color: white;
+      width: 200px;
+      background: rgb(75, 74, 74);
+      float: left;
+    }
+  
+  /* top page links */
+  /* CAN'T CONTROL COLOR IN CLASS??? */
+    .headerLinks {
+      text-align: center;
+      margin-bottom: 0px;
+      background: white;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    #about {
+      float: left;
+      width: 100px;
+    }
+    #portfolio {
+      float: left;
+      width: 100px;
+    }
+    #contact {
+      float: left;
+      width: 100px;
+    }
+
+    .aboutMeBox {
+      font-family: Karla;
+      width: 500px;
+      background: white;
+    }
