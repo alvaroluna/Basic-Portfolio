@@ -1,6 +1,7 @@
 /* body */
   body {
-    background: grey;
+    /* background: grey; */
+    background-image: linear-gradient(rgb(0, 132, 255), white)
   }
 
 /* HEADER THE SAME FOR ALL HTML FILES */
@@ -48,18 +49,19 @@
 
     .aboutMeBox {
       /* margin: 20px; */
+      /* background: #f2f2f2; */
     }
     .boxContents {
       font-family: Karla;
       width: 500px;
-      background: white;
+      background: #f2f2f2;
       /* text-align: center; */
       float: left;
       margin: 40px;
     }
 
     footer {
-      background: black;
+      /* background: white; */
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -67,8 +69,69 @@
     }
 
     .container {
-      color: white;
+      color: black;
       font-family: Karla;
       font-size: x-small;
       text-align: center;
+    }
+
+    /* ##################### */
+    /* FORM                  */
+    /* ##################### */
+    * {
+      /* box-sizing: border-box; */
+      box-sizing: content-box;
+    }
+    
+    /* Style inputs */
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    /* submit button */
+    input[type=submit] {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: grey;
+    }
+    
+    /* Style the container/contact section */
+    .formContainer {
+      font-family: Karla;
+      border-radius: 0px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    /* Create two columns that float next to eachother */
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
     }
