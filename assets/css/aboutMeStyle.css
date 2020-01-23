@@ -1,0 +1,13 @@
+.aboutMeBox {
+    /* margin: 20px; */
+    background: #f2f2f2;
+  }
+
+.boxContents {
+font-family: Karla;
+width: 500px;
+background: #f2f2f2;
+/* text-align: center; */
+float: left;
+margin: 40px;
+}
