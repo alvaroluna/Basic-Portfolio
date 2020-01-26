@@ -2,8 +2,23 @@
 /* FORM                  */
 /* ##################### */
 * {
-/* box-sizing: border-box; */
-box-sizing: content-box;
+box-sizing: border-box;
+}
+
+/* Style the container/contact section */
+.formContainer {
+font-family: Karla;
+border-radius: 0px;
+background-color: #f2f2f2;
+padding: 10px;
+width: 500px;
+
+/* center container */
+position: absolute;
+float: left;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 }
 
 /* Style inputs */
@@ -26,14 +41,6 @@ cursor: pointer;
 }
 input[type=submit]:hover {
 background-color: grey;
-}
-
-/* Style the container/contact section */
-.formContainer {
-font-family: Karla;
-border-radius: 0px;
-background-color: #f2f2f2;
-padding: 10px;
 }
 
 /* Create two columns that float next to eachother */

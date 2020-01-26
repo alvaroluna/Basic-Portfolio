@@ -1,62 +1,67 @@
+/*###############*/
 /* BODY SETTINGS */
+/*###############*/
   body {
-    /* background: grey; */
-    background-image: linear-gradient(rgb(0, 132, 255), white)
+    background-image: linear-gradient(rgb(0, 132, 255), white);
+    min-height: 1000px;
   }
 
-/* HEADER SETTINGS */
-  header {
+/*################*/
+/* NAVIGATION BAR */
+/*################*/
+  .navBar {
     font-family: 'Karla', sans-serif;
-    background: white;
+    margin: 20px;
   }
 
   /* name icon in header */
-    #nameBlock {
-      font-weight: bold;
-      font-size: x-large;
-      text-align: center;
-      color: white;
-      width: 200px;
-      background: rgb(75, 74, 74);
-      float: left;
-    }
+  #nameBlock {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    width: 200px;
+    /* background: rgb(75, 74, 74); */
+    float: left;
+  }
   
-  /* HEADER LINK SETTINGS */
-    .headerLinks {
-      text-align: center;
-      margin-bottom: 0px;
-      background: white;
-    }
-  
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    #about {
-      float: left;
-      width: 100px;
-    }
-    #portfolio {
-      float: left;
-      width: 100px;
-    }
-    #contact {
-      float: left;
-      width: 100px;
-    }
+  /* navigation bar links */
+  .headerLinks {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 85rem;
+  }
 
- 
-    footer {
-      /* background: white; */
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 2.5rem;
-    }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  #aboutLink {
+    float: left;
+    width: 100px;
+    /* background: grey; */
+  }
+  #portfolioLink {
+    float: left;
+    width: 100px;
+    /* background: grey; */
+  }
+  #contactLink {
+    float: left;
+    width: 100px;
+    /* background: grey; */
+  }
 
-    .container {
-      color: black;
-      font-family: Karla;
-      font-size: x-small;
-      text-align: center;
-    }
+/*########*/
+/* FOOTER */
+/*########*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: black;
+    font-family: Karla;
+    font-size: x-small;
+    text-align: center;
+  }
