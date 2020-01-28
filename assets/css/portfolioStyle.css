@@ -1,10 +1,36 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+    /* color palette */
+    --color-box: 242, 242, 242;
+    --alpha: 0.5;
+  
+    /* font families */
+    --main-font: 'Karla', sans-serif;
+  }
+
 * {
     box-sizing: border-box;
   }
   
   /* Center website */
   .main {
-    max-width: 1000px;
+    background: rgb(var(--color-box));
+    width: 500px;
+    height: 500px;
+    
+    /* center container */
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* fonts */
+    font-family: var(--main-font);
+    text-align: left;
     margin: auto;
   }
   
@@ -33,7 +59,8 @@
   
   /* Content */
   .content {
-    background-color: white;
+    /* background-color: white; */
+    font-family: var(--main-font);
     padding: 10px;
   }
   

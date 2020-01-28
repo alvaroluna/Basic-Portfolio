@@ -1,7 +1,21 @@
+/* ############# */
+/* CSS VARIABLES */
+/* ############# */
+
+* {
+  /* color palette */
+  --color-box: 242, 242, 242;
+  --alpha: 0.5;
+
+  /* font families */
+  --main-font: 'Karla', sans-serif;
+}
+
 .aboutContainer {
-  background: #f2f2f2;
-  width: 500px;
-  height: 500px;
+  background: rgb(var(--color-box));
+  width: 420px;
+  height: 420px;
+  padding: 40px;
   
   /* center container */
   position: absolute;
@@ -11,7 +25,7 @@
   transform: translate(-50%, -50%);
 
   /* fonts */
-  font-family: Karla;
+  font-family: var(--main-font);
   text-align: left;
   
 }
