@@ -7,6 +7,8 @@
   --bkgnd-gradTop: 0, 132, 255;
   --bkgnd-gradBtm: 255, 255, 255;
   --color-box: 242, 242, 242;
+  --color-nameBlock: 75, 74, 74;
+  --color-border: 242, 242, 242;
   --alpha: 0.5;
 
   /* font families */
@@ -29,21 +31,32 @@
     margin: 20px;
   }
 
+  hr {
+    position: relative;
+    bottom: 7px;
+    border-color: rgb(var(--color-nameBlock));
+    background: rgb(var(--color-nameBlock));
+    border-width: 0.5px;
+  }
+
   /* name icon in header */
   #nameBlock {
     font-weight: bold;
     font-size: x-large;
     text-align: center;
-    color: black;
+    color: white;
     width: 200px;
-    /* background: rgb(75, 74, 74); */
+    background: rgb(var(--color-nameBlock));
+    padding-top: 5px;
+    padding-bottom: 5px;
     float: left;
   }
   
   /* navigation bar links */
   .headerLinks {
+    position: relative;
     text-align: center;
-    margin-bottom: 0px;
+    bottom: -15px;
     margin-left: 75%;
   }
 
@@ -65,8 +78,17 @@
   #contactLink {
     float: left;
     width: 100px;
+    /* clear: both; */
     /* background: grey; */
   }
+
+#footerBreakLine {
+  position: relative;
+    top : 875px;
+    border-color: rgb(var(--color-nameBlock));
+    background: rgb(var(--color-nameBlock));
+    border-width: 0.5px;
+}
 
 /*########*/
 /* FOOTER */

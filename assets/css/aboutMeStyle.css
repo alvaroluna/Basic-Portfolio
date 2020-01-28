@@ -27,5 +27,25 @@
   /* fonts */
   font-family: var(--main-font);
   text-align: left;
-  
+  clear: both;
+}
+
+.bioContents {
+  position: relative;
+  bottom: -20px;
+}
+
+h1 {
+  text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+#portrait {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
